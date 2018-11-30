@@ -4,17 +4,13 @@ sudo: false
 cache: bundler
 
 rvm:
-  - '2.2.6'
-  - '2.3.3'
+  - '2.5.1'
   - 'ruby-head'
 
 env:
-  - DB=sqlite     RAILS='~> 5.0'
-  - DB=postgresql RAILS='~> 5.0'
-  - DB=mysql      RAILS='~> 5.0'
-  - DB=sqlite     RAILS='~> 4.2'
-  - DB=postgresql RAILS='~> 4.2'
-  - DB=mysql      RAILS='~> 4.2'
+  - DB=sqlite     RAILS='~> 5.2'
+  - DB=postgresql RAILS='~> 5.2'
+  - DB=mysql      RAILS='~> 5.2'
 
 matrix:
   allow_failures:
